@@ -97,7 +97,10 @@ window.addEventListener('scroll', (e) => {
 	if (last_scrollY == window.scrollY){
 		return;
 	}
-
+	if (window.scrollY == header.clientHeight || window.scrollY == 0){
+		scrolling = false;
+		return;
+	}
 	if (last_scrollY > window.scrollY){
 		//scroll up`
 		if (!scrolling){
@@ -112,9 +115,7 @@ window.addEventListener('scroll', (e) => {
 		}
 
 	}
-	if (window.scrollY == header.clientHeight || window.scrollY == 0){
-		scrolling = false;
-	}
+	
 	last_scrollY = window.scrollY;
 
 	if (isInViewport(invis)){

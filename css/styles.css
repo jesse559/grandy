@@ -36,9 +36,10 @@ body{
 
 .header-wrapper{
     width: 100%;
-    background-image: url('../imgs/landing3.png');
+    background-image: url('../imgs/landing6.jpg');
     background-size: 100% auto;
 }
+
 .header{
     color: #fff;
     display: grid;
@@ -69,19 +70,6 @@ body{
     padding: 0;
     padding: 0.5rem;
     border: none;
-}
-
-.header-bg-img{
-    content: '';
-    height: 100vh;
-    width: 100%;
-    background-image: url('../imgs/landing3.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    top: 0;
-    left: 0;
 }
 
 .header .landing{
